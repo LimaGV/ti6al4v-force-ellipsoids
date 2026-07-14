@@ -11,3 +11,12 @@ dist/
 *.egg-info/
 results/*
 !results/.gitkeep
+
+# Dados experimentais privados
+data/raw/*
+data/source_original/*
+notebooks/00_metodologia_reprodutivel_dados_reais.ipynb
+figures/elipsoide_experimento_12.png
+
+!data/raw/.gitkeep
+!data/source_original/.gitkeep
