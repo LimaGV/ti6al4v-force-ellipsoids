@@ -1,4 +1,4 @@
-cff-version: 1.2.0
+﻿cff-version: 1.2.0
 message: "If you use this software or dataset, please cite the associated paper and this repository."
 title: "Covariance Ellipsoids of Machining Forces for Surface-Roughness Modeling"
 type: software
@@ -7,7 +7,7 @@ authors:
     given-names: "Gabriel V."
   - family-names: "de Oliveira"
     given-names: "Marlon M."
-  - family-names: "Cesário"
+  - family-names: "CesÃ¡rio"
     given-names: "Mirelli de C."
   - family-names: "Campos"
     given-names: "Paulo H. S."
@@ -15,7 +15,7 @@ authors:
     given-names: "Anderson P."
 version: "0.1.0"
 date-released: "2026-07-14"
-repository-code: "https://github.com/SEU-USUARIO/ti6al4v-force-ellipsoids"
+repository-code: "https://github.com/LimaGV/ti6al4v-force-ellipsoids"
 keywords:
   - "Ti-6Al-4V"
   - "turning"
@@ -24,3 +24,4 @@ keywords:
   - "surface roughness"
   - "Mahalanobis distance"
 license: MIT
+

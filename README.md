@@ -1,8 +1,8 @@
-# Covariance Ellipsoids of Machining Forces for Surface-Roughness Modeling
+﻿# Covariance Ellipsoids of Machining Forces for Surface-Roughness Modeling
 
 Reproducibility repository for the study:
 
-**“Multivariate Ellipsoidal Representations of Machining Forces for Surface-Roughness Modeling in Ti-6Al-4V Turning.”**
+**â€œMultivariate Ellipsoidal Representations of Machining Forces for Surface-Roughness Modeling in Ti-6Al-4V Turning.â€**
 
 The study uses a 19-run central composite design, three-component machining-force signals, covariance ellipsoids, geometric descriptors, and multiple linear regression to model average surface roughness (`Ra`) in dry turning of Ti-6Al-4V.
 
@@ -11,21 +11,21 @@ The study uses a 19-run central composite design, three-component machining-forc
 Using the original force signals and the full numerical precision of the extracted features, the repository reproduces:
 
 ```text
-Ra = -1.758866 + 0.531748(a/b) + 0.00740784[dM × (b/c)]
+Ra = -1.758866 + 0.531748(a/b) + 0.00740784[dM Ã— (b/c)]
 ```
 
 The coefficients reported from the rounded manuscript table are nearly identical:
 
 ```text
-Ra = -1.758970 + 0.531757(a/b) + 0.007408[dM × (b/c)]
+Ra = -1.758970 + 0.531757(a/b) + 0.007408[dM Ã— (b/c)]
 ```
 
 Expected end-to-end validation results:
 
 | Metric | Value |
 |---|---:|
-| Adjusted R² | 0.9463 |
-| LOOCV R² | 0.9294 |
+| Adjusted RÂ² | 0.9463 |
+| LOOCV RÂ² | 0.9294 |
 | LOOCV MAE | 0.3394 |
 | LOOCV RMSE | 0.4040 |
 
@@ -51,22 +51,22 @@ The maximum differences between the recalculated features and the original refer
 
 ```text
 .
-├── data/
-│   ├── raw/Forcas_C50_R08.xlsx
-│   ├── metadata/DOE_titanio_C50_R08_CCD.xlsx
-│   ├── validation/teste_OLS_referencia.xlsx
-│   └── processed/experiment_summary.csv
-├── notebooks/
-│   ├── 00_metodologia_reprodutivel_dados_reais.ipynb
-│   ├── 00_metodologia_resumida.ipynb
-│   ├── 01_reproduce_published_model.ipynb
-│   └── 02_extract_ellipsoid_features_template.ipynb
-├── src/machining_ellipsoids/
-├── scripts/
-├── tests/
-├── figures/
-├── results/
-└── CITATION.cff
+â”œâ”€â”€ data/
+â”‚   â”œâ”€â”€ raw/Forcas_C50_R08.xlsx
+â”‚   â”œâ”€â”€ metadata/DOE_titanio_C50_R08_CCD.xlsx
+â”‚   â”œâ”€â”€ validation/teste_OLS_referencia.xlsx
+â”‚   â””â”€â”€ processed/experiment_summary.csv
+â”œâ”€â”€ notebooks/
+â”‚   â”œâ”€â”€ 00_metodologia_reprodutivel_dados_reais.ipynb
+â”‚   â”œâ”€â”€ 00_metodologia_resumida.ipynb
+â”‚   â”œâ”€â”€ 01_reproduce_published_model.ipynb
+â”‚   â””â”€â”€ 02_extract_ellipsoid_features_template.ipynb
+â”œâ”€â”€ src/machining_ellipsoids/
+â”œâ”€â”€ scripts/
+â”œâ”€â”€ tests/
+â”œâ”€â”€ figures/
+â”œâ”€â”€ results/
+â””â”€â”€ CITATION.cff
 ```
 
 ## Quick start
@@ -117,8 +117,9 @@ Update `CITATION.cff` with the final GitHub URL, DOI, ORCIDs, publication status
 
 - Gabriel V. de Lima
 - Marlon M. de Oliveira
-- Mirelli de C. Cesário
+- Mirelli de C. CesÃ¡rio
 - Paulo H. S. Campos
 - Anderson P. de Paiva
 
-Universidade Federal de Itajubá — UNIFEI, Brazil.
+Universidade Federal de ItajubÃ¡ â€” UNIFEI, Brazil.
+
