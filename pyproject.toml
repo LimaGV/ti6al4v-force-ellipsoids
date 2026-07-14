@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "machining-ellipsoids"
+version = "0.1.0"
+description = "Covariance-ellipsoid features for three-component machining-force signals."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Gabriel V. de Lima"}
+]
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.1,<4",
+  "scipy>=1.11,<2",
+  "statsmodels>=0.14,<1",
+  "scikit-learn>=1.3,<2",
+  "matplotlib>=3.8,<4",
+  "openpyxl>=3.1,<4"
+]
+
+[project.optional-dependencies]
+dev = [
+  "jupyterlab>=4,<5",
+  "pytest>=8,<10"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
